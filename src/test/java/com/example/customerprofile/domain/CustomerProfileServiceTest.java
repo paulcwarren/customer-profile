@@ -95,6 +95,7 @@ class CustomerProfileServiceTest {
         var profile = entityCaptor.getValue();
         assertThat(profile.getFirstName()).isEqualTo("John");
         assertThat(profile.getLastName()).isEqualTo("Does");
+        assertThat(profile.getEmail()).isEqualTo("john.does@test.org");
     }
 
     @Test
